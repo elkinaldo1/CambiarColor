@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CambiarColor"
+             x:Class="CambiarColor.MainPage">
+
+    <StackLayout>
+        <BoxView x:Name="boxColor"
+                 BackgroundColor="Black"
+                 HeightRequest="300">
+        </BoxView>
+
+        <Label Margin="25, 30, 0, 0"
+               Text="Rojo">
+        </Label>
+        <Slider x:Name="slRojo"
+                Margin="15,0,0,0"
+                ValueChanged="Sl_ValueChanged">
+        </Slider>
+        
+        <Label Margin="25, 30, 0, 0"
+               Text="Verde">
+        </Label>
+        <Slider x:Name="slVerde"
+                Margin="15,0,0,0"
+                ValueChanged="Sl_ValueChanged">
+        </Slider>
+        
+        <Label Margin="25, 30, 0, 0"
+               Text="Azul">
+        </Label>
+        <Slider x:Name="slAzul"
+                Margin="15,0,0,0"
+                ValueChanged="Sl_ValueChanged">
+        </Slider>
+        
+        <Label Margin="25, 30, 0, 0"
+               Text="Opacidad">
+        </Label>
+        <Slider x:Name="slOpacidad"
+                Margin="15,0,0,0"
+                ValueChanged="Sl_ValueChanged">
+        </Slider>
+
+        <Label x:Name="lbDisplay"
+               Margin="25,30,0,0"
+               Text="Valor Hexadecimal"
+               FontAttributes="Bold"
+               FontSize="Large">
+        </Label>
+    </StackLayout>
+
+</ContentPage>
